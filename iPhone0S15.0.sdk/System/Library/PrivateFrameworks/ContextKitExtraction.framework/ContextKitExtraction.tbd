@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ContextKitExtractionVersionNumber,
+                            _ContextKitExtractionVersionString ]
+    objc-classes:         [ CKContextContentProvider,
+                            CKContextContentProviderManager,
+                            CKContextContentProviderUIScene, CKContextExecutor,
+                            CKContextExtractionUtil, CKContextImageSource,
+                            CKContextItem, CKContextUIClasses, CKContextUIElement,
+                            CKContextUserActivity ]
+    objc-ivars:           [ CKContextContentProviderManager._activityReportingQueue,
+                            CKContextContentProviderManager._providers,
+                            CKContextContentProviderManager._providersStrong,
+                            CKContextContentProviderManager._userActivitiesQueuedForReporting,
+                            CKContextContentProviderUIScene.__scene,
+                            CKContextContentProviderUIScene._allowAppSwitcherControls,
+                            CKContextContentProviderUIScene._debugButton,
+                            CKContextContentProviderUIScene._recentsButton,
+                            CKContextContentProviderUIScene._toolInstallationTimer,
+                            CKContextExecutor._completionCondition,
+                            CKContextExecutor._completionHandler,
+                            CKContextExecutor._completionQueue,
+                            CKContextExecutor._context, CKContextExecutor._done,
+                            CKContextExecutor._group,
+                            CKContextExecutor._timeoutAfter,
+                            CKContextExecutor._workItemQueue,
+                            CKContextImageSource._cameraIntrinsics,
+                            CKContextImageSource._ioSurface,
+                            CKContextImageSource._orientation,
+                            CKContextImageSource._profile, CKContextItem._title,
+                            CKContextItem._topicId,
+                            CKContextUIElement._absoluteOriginOnScreen,
+                            CKContextUIElement._className,
+                            CKContextUIElement._density,
+                            CKContextUIElement._fontSize,
+                            CKContextUIElement._frameInWindow,
+                            CKContextUIElement._onScreen,
+                            CKContextUIElement._superviewClassNames,
+                            CKContextUIElement._text,
+                            CKContextUserActivity._bundleIdentifier,
+                            CKContextUserActivity._generatedActivity,
+                            CKContextUserActivity._numberOfOccurrences,
+                            CKContextUserActivity._recordedTimeIntervalSince1970,
+                            CKContextUserActivity._userActivity,
+                            CKContextUserActivity._userActivityData,
+                            CKContextUserActivity._uuid ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/GroupActivities.framework/GroupActivities
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _GroupActivitiesVersionNumber,
+                            _GroupActivitiesVersionString ]
+    objc-classes:         [ _TtC15GroupActivities11LinkManager,
+                            _TtCC15GroupActivities14PlaybackSyncer27AVCoordinatorDelegateBridge ]
+...

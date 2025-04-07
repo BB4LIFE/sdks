@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleMediaServicesUIDynamic.framework/AppleMediaServicesUIDynamic
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AMSUIDMarkdownAttributeNameArtworkIdentifier,
+                            _AMSUIDMarkdownAttributeNameFontFamily,
+                            _AMSUIDMarkdownAttributeNameFontName,
+                            _AMSUIDMarkdownAttributeNameFontSize,
+                            _AMSUIDMarkdownAttributeNameFontWeight,
+                            _AMSUIDMarkdownAttributeNameLink,
+                            _AMSUIDMarkdownMediaType,
+                            _AMSUIDMarkdownParserErrorColumnKey,
+                            _AMSUIDMarkdownParserErrorDomain,
+                            _AMSUIDMarkdownParserErrorLineNumberKey,
+                            _AppleMediaServicesUIDynamicVersionNumber,
+                            _AppleMediaServicesUIDynamicVersionString,
+                            _deviceIsRunningInternalBuild,
+                            _deviceIsRunningSeedBuild ]
+    objc-classes:         [ AMSUIDAirplaneModeInquiry, AMSUIDCellularDataInquiry,
+                            AMSUIDDynamicImpressionItem,
+                            AMSUIDDynamicImpressionMetrics,
+                            AMSUIDDynamicImpressionMetricsIdentifier,
+                            AMSUIDDynamicViewController, AMSUIDHomeScreenIcons,
+                            AMSUIDMarkdownParser, AMSUIDMobileGestalt,
+                            FrameworkDynamicUIPlugin,
+                            _TtC27AppleMediaServicesUIDynamic12DynamicLabel,
+                            _TtC27AppleMediaServicesUIDynamic16ArtworkImageView,
+                            _TtC27AppleMediaServicesUIDynamic19ErrorViewController,
+                            _TtC27AppleMediaServicesUIDynamic21LoadingViewController,
+                            _TtC27AppleMediaServicesUIDynamic23MarkdownStringGenerator,
+                            _TtC27AppleMediaServicesUIDynamic25BundleImageFetchOperation,
+                            _TtC27AppleMediaServicesUIDynamic25SystemImageFetchOperation,
+                            _TtC27AppleMediaServicesUIDynamic26DeferredPageViewController ]
+    objc-ivars:           [ AMSUIDAirplaneModeInquiry._delegate,
+                            AMSUIDAirplaneModeInquiry._radiosPreferences,
+                            AMSUIDCellularDataInquiry._bundle,
+                            AMSUIDMarkdownParser.__parserContext,
+                            AMSUIDMarkdownParser._delegate,
+                            AMSUIDMarkdownParser._string ]
+...

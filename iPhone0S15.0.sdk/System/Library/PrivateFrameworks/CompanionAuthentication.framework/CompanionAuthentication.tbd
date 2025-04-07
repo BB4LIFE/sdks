@@ -1,0 +1,69 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CompanionAuthentication.framework/CompanionAuthentication
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CASCancellationReasonErrorKey,
+                            _CASCustomAuthenticationMethodErrorKey,
+                            _CASCustomAuthenticationMethodOther,
+                            _CASCustomAuthenticationMethodRestorePurchase,
+                            _CASCustomAuthenticationMethodVideoSubscriberAccount,
+                            _CASErrorDomain, _CASErrorGetCancellationReason,
+                            _CASErrorGetCustomAuthenticationMethod,
+                            _CASErrorMake, _CASErrorMultipleUnderlyingMake,
+                            _CASErrorUnderlyingMake,
+                            _CASMetricsSessionResultWithCustomMethod,
+                            _CompanionAuthenticationVersionNumber,
+                            _CompanionAuthenticationVersionString,
+                            _cas_daemon_log, _cas_service_connection_log,
+                            _cas_service_listener_log, _cas_service_log,
+                            _cas_session_log ]
+    objc-classes:         [ CASAppSignInRequest, CASAppSignInResponse,
+                            CASAuthenticationRequest, CASAuthenticationResponse,
+                            CASAuthenticationSession, CASDevice, CASMetrics,
+                            CASPasswordCredential,
+                            CASPaymentSheetPresentationContext, CASServiceProxy,
+                            CASStorePurchaseRequest, CASStorePurchaseResponse,
+                            CASSystemAuthenticationRequest,
+                            CASSystemAuthenticationResponse,
+                            CASViewServicePresenterInterface ]
+    objc-ivars:           [ CASAppSignInRequest._appleIDRequest,
+                            CASAppSignInRequest._customAuthenticationMethods,
+                            CASAppSignInRequest._overrideBundleIdentifier,
+                            CASAppSignInRequest._passwordRequest,
+                            CASAppSignInResponse._appleIDAuthorization,
+                            CASAppSignInResponse._passwordCredential,
+                            CASAuthenticationSession._deviceAcceptedNotificationHandler,
+                            CASAuthenticationSession._deviceStartedAuthenticationHandler,
+                            CASAuthenticationSession._dispatchQueue,
+                            CASAuthenticationSession._invalidateDone,
+                            CASAuthenticationSession._request,
+                            CASAuthenticationSession._service,
+                            CASAuthenticationSession._sessionFailedHandler,
+                            CASAuthenticationSession._sessionFinishedHandler,
+                            CASDevice._flags, CASDevice._model, CASDevice._name,
+                            CASPasswordCredential._password,
+                            CASPasswordCredential._user,
+                            CASPaymentSheetPresentationContext._delegatePurchaseRequest,
+                            CASPaymentSheetPresentationContext._localPaymentRequest,
+                            CASPaymentSheetPresentationContext._storeAccount,
+                            CASServiceProxy._activateCalledAtomic,
+                            CASServiceProxy._connection,
+                            CASServiceProxy._deviceAcceptedNotificationHandler,
+                            CASServiceProxy._deviceStartedAuthenticationHandler,
+                            CASServiceProxy._dispatchQueue,
+                            CASServiceProxy._interruptionHandler,
+                            CASServiceProxy._invalidateDone,
+                            CASServiceProxy._invalidationHandler,
+                            CASServiceProxy._sessionFailedHandler,
+                            CASServiceProxy._sessionFinishedHandler,
+                            CASStorePurchaseRequest._account,
+                            CASStorePurchaseRequest._purchaseRequest,
+                            CASStorePurchaseResponse._purchaseResult,
+                            CASSystemAuthenticationRequest._service ]
+...

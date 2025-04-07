@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          "/usr/lib/libcmark-gfm-extensions.dylib"
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CMARK_NODE_STRIKETHROUGH, _CMARK_NODE_TABLE,
+                            _CMARK_NODE_TABLE_CELL, _CMARK_NODE_TABLE_ROW,
+                            __ext_scan_at, __scan_table_cell,
+                            __scan_table_cell_end, __scan_table_row_end,
+                            __scan_table_start, __scan_tasklist,
+                            _cmark_gfm_core_extensions_ensure_registered,
+                            _cmark_gfm_extensions_get_table_alignments,
+                            _cmark_gfm_extensions_get_table_columns,
+                            _cmark_gfm_extensions_get_table_row_is_header,
+                            _cmark_gfm_extensions_get_tasklist_item_checked,
+                            _cmark_gfm_extensions_set_table_alignments,
+                            _cmark_gfm_extensions_set_table_columns,
+                            _cmark_gfm_extensions_set_table_row_is_header,
+                            _cmark_gfm_extensions_set_tasklist_item_checked,
+                            _create_autolink_extension,
+                            _create_strikethrough_extension,
+                            _create_table_extension, _create_tagfilter_extension,
+                            _create_tasklist_extension ]
+...

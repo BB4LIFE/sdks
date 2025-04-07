@@ -1,0 +1,77 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CHSAppearanceColorSchemeFromUserInterfaceStyle,
+                            _CHUISAvocadoWorkspaceIdentifier,
+                            _CHUISLogViewController,
+                            _CHUISLogViewControllerTouch, _CHUISSceneWorkspace,
+                            _CHUISURLOpeningEntitlement,
+                            _CHWindowSceneSessionRoleAvocado,
+                            _ChronoLoggingSubsystem,
+                            _ChronoUIServicesVersionNumber,
+                            _ChronoUIServicesVersionString ]
+    objc-classes:         [ CHUISAvocadoHostCancelTouchesAssertion,
+                            CHUISAvocadoHostViewController,
+                            CHUISAvocadoRequestLaunchAction,
+                            CHUISAvocadoSceneClientSettings,
+                            CHUISAvocadoSceneSettings,
+                            CHUISAvocadoSceneSettingsDiffInspector,
+                            CHUISAvocadoSceneSpecification,
+                            CHUISAvocadoWindowScene,
+                            CHUISMutableAvocadoSceneClientSettings,
+                            CHUISMutableAvocadoSceneSettings,
+                            CHUISMutableWidgetVisibilitySettings,
+                            CHUISPreferences, CHUISTouchPassThroughView,
+                            CHUISWidgetVisibilitySettings ]
+    objc-ivars:           [ CHUISAvocadoHostCancelTouchesAssertion._assertions,
+                            CHUISAvocadoHostCancelTouchesAssertion._invalidated,
+                            CHUISAvocadoHostViewController._animationsDisabled,
+                            CHUISAvocadoHostViewController._avocadoViewShouldShareTouchesWithHost,
+                            CHUISAvocadoHostViewController._cachedSceneLogDigest,
+                            CHUISAvocadoHostViewController._delegate,
+                            CHUISAvocadoHostViewController._descriptor,
+                            CHUISAvocadoHostViewController._descriptorProvider,
+                            CHUISAvocadoHostViewController._drawSystemBackgroundMaterialIfNecessary,
+                            CHUISAvocadoHostViewController._foregroundState,
+                            CHUISAvocadoHostViewController._invalidated,
+                            CHUISAvocadoHostViewController._isInViewDidDisappear,
+                            CHUISAvocadoHostViewController._isInvalidatingBackgroundAssertion,
+                            CHUISAvocadoHostViewController._liveSceneSnapshotView,
+                            CHUISAvocadoHostViewController._materialView,
+                            CHUISAvocadoHostViewController._metrics,
+                            CHUISAvocadoHostViewController._mode,
+                            CHUISAvocadoHostViewController._persistedWidgetSnapshotCaarView,
+                            CHUISAvocadoHostViewController._persistedWidgetSnapshotImageView,
+                            CHUISAvocadoHostViewController._persistedWidgetSnapshotViewContainer,
+                            CHUISAvocadoHostViewController._preferences,
+                            CHUISAvocadoHostViewController._preventBackgroundingAssertions,
+                            CHUISAvocadoHostViewController._scene,
+                            CHUISAvocadoHostViewController._scenePresenter,
+                            CHUISAvocadoHostViewController._screenshotManager,
+                            CHUISAvocadoHostViewController._signpostID,
+                            CHUISAvocadoHostViewController._snapshotDebugLabel,
+                            CHUISAvocadoHostViewController._snapshotDebugView,
+                            CHUISAvocadoHostViewController._snapshotHidingSequence,
+                            CHUISAvocadoHostViewController._style,
+                            CHUISAvocadoHostViewController._touchDeliveryPolicyAssertions,
+                            CHUISAvocadoHostViewController._usesSystemBackgroundMaterial,
+                            CHUISAvocadoHostViewController._visibilitySettings,
+                            CHUISAvocadoHostViewController._visibleEntryShouldSnapshot,
+                            CHUISAvocadoHostViewController._widget,
+                            CHUISAvocadoHostViewController._widgetConfigurationIdentifier,
+                            CHUISAvocadoSceneSettings._visibleEntryShouldSnapshot,
+                            CHUISAvocadoWindowScene._visibleEntryShouldSnapshot,
+                            CHUISPreferences._debugPrefersStaticSnapshots,
+                            CHUISPreferences._debugSnapshotViewColoring,
+                            CHUISPreferences._debugViewLabels,
+                            CHUISPreferences._defaults,
+                            CHUISWidgetVisibilitySettings._settled,
+                            CHUISWidgetVisibilitySettings._visibleBounds ]
+...

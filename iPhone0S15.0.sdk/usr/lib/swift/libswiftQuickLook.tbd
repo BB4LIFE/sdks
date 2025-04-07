@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftQuickLook.dylib
+current-version:       846.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$sSo14QLPreviewReplyC9QuickLookE11contextSize8isBitmap9drawUsingABSo6CGSizeV_SbySo12CGContextRefa_ABtKctcfC,
+                            _$sSo14QLPreviewReplyC9QuickLookE14stringEncodingSS10FoundationE0F0VvM,
+                            _$sSo14QLPreviewReplyC9QuickLookE14stringEncodingSS10FoundationE0F0Vvg,
+                            _$sSo14QLPreviewReplyC9QuickLookE14stringEncodingSS10FoundationE0F0VvpMV,
+                            _$sSo14QLPreviewReplyC9QuickLookE14stringEncodingSS10FoundationE0F0Vvs,
+                            _$sSo14QLPreviewReplyC9QuickLookE17dataOfContentType11contentSize15createDataUsingAB07UniformH11Identifiers6UTTypeV_So6CGSizeV10Foundation0L0VABKctcfC,
+                            _$sSo14QLPreviewReplyC9QuickLookE18forPDFWithPageSize19createDocumentUsingABSo6CGSizeV_So11PDFDocumentCABKctcfC,
+                            __swift_FORCE_LOAD_$_swiftQuickLook ]
+...

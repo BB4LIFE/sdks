@@ -1,0 +1,39 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PreviewsServices.framework/PreviewsServices
+current-version:       19075
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PreviewsServicesVersionNumber,
+                            _PreviewsServicesVersionString,
+                            _UVInjectedSceneSessionRole, _UVPreviewsInjectionLog,
+                            _UVPreviewsServicesError, _UVPreviewsServicesLog ]
+    objc-classes:         [ UVFenceHandle, UVInjectedSceneSpecification,
+                            UVInjectedSceneToken, UVMutablePreviewSceneSettings,
+                            UVPreviewSceneSettings, UVPreviewSceneSpecification,
+                            UVPropertyList, UVPrototypeDomain, UVPrototypeSettings,
+                            UVSceneHost, UVSceneInjectionUtility,
+                            _TtC16PreviewsServices20UVPreviewSceneAction,
+                            _TtC16PreviewsServices26SceneHostingViewController,
+                            _TtCC16PreviewsServices25PreviewsServiceConnection8Listener ]
+    objc-ivars:           [ UVFenceHandle._underlying,
+                            UVInjectedSceneToken._bundleID,
+                            UVInjectedSceneToken._invalidated,
+                            UVInjectedSceneToken._invalidationHandler,
+                            UVInjectedSceneToken._scene,
+                            UVPropertyList._dictionary,
+                            UVPrototypeSettings._showDebugUI,
+                            UVSceneHost._hostIdentifier,
+                            UVSceneHost._invalidated, UVSceneHost._maximized,
+                            UVSceneHost._overrideMaximumSize,
+                            UVSceneHost._overrideSceneSize,
+                            UVSceneHost._parentScene,
+                            UVSceneHost._sceneActionHandler,
+                            UVSceneHost._scenePresenter,
+                            UVSceneHost._sceneResizeHandler,
+                            UVSceneHost._sceneToken ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AUDeveloperSettings.framework/AUDeveloperSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AUDeveloperSettingsAccessoryFusingStringToType,
+                            _AUDeveloperSettingsAccessoryFusingTypeToString,
+                            _AUDeveloperSettingsURLStringToType,
+                            _AUDeveloperSettingsURLTypeToString,
+                            _AUDeveloperSettingsVersionNumber,
+                            _AUDeveloperSettingsVersionString ]
+    objc-classes:         [ AUDeveloperSettingsController,
+                            AUDeveloperSettingsDatabase,
+                            AUDeveloperSettingsLearnMoreController ]
+    objc-ivars:           [ AUDeveloperSettingsDatabase._database,
+                            AUDeveloperSettingsDatabase._log,
+                            AUDeveloperSettingsLearnMoreController._controller ]
+...

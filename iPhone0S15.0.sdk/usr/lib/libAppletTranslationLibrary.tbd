@@ -1,0 +1,61 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libAppletTranslationLibrary.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ ATLCurrency, ATLGetDecoder, ATLLoggerObj, ATLTimer,
+                            AppletConfigurationData, AppletTranslator,
+                            BaseMifareDecoder, CopernicusDecoder,
+                            CopernicusHCEDecoder, DERDecoder, DERLogContext,
+                            EMVDecoder, GondolaDecoder, HPHistoryDecoder, HashHelper,
+                            HerculesDecoder, HerculesFareTables, HerculesMappings,
+                            HerculesVCReader, IDHistoryDecoder, MercuryDecoder,
+                            MifareDecoder, MifareUtils, MogulDecoder, MogulPoint,
+                            OctopusDecoder, PluginDecoder, QPHistoryDecoder,
+                            SeosDecoder, SlalomDecoder, SlalomReadOperation,
+                            SlalomUtils, SlalomWriteOperation, TransceiverWrapper,
+                            WuluDecoder, WuluReaderContext, WuluRecord,
+                            _TtC24AppletTranslationLibrary11ExpressMode ]
+    objc-ivars:           [ ATLTimer._block, ATLTimer._delay, ATLTimer._queue,
+                            ATLTimer._src, AppletConfigurationData.config,
+                            AppletConfigurationData.maErrorCount,
+                            AppletConfigurationData.maMetadataQueryInterval,
+                            AppletConfigurationData.pluginCache,
+                            AppletConfigurationData.queue,
+                            AppletConfigurationData.retryInProgress,
+                            AppletConfigurationData.userDefaults,
+                            CopernicusDecoder._endPointIdentifier,
+                            CopernicusDecoder._state,
+                            CopernicusDecoder._stepUpData,
+                            CopernicusDecoder._transactionType,
+                            DERLogContext.circBuff,
+                            DERLogContext.circBuffStorage, HashHelper.ctx,
+                            MogulPoint._balance, MogulPoint._expiration,
+                            MogulPoint._isExpired, MogulPoint._name,
+                            PluginDecoder.script, SlalomDecoder._debug,
+                            SlalomDecoder._eotInProgress,
+                            SlalomDecoder._hciArray,
+                            SlalomDecoder._serviceProvider,
+                            SlalomReadOperation.blockNumber,
+                            SlalomReadOperation.serviceCode,
+                            SlalomWriteOperation.blockNumber,
+                            SlalomWriteOperation.offsets,
+                            SlalomWriteOperation.serviceCode,
+                            TransceiverWrapper._circBuffStorage,
+                            TransceiverWrapper._circbuff,
+                            TransceiverWrapper._transceiver, WuluDecoder.debug,
+                            WuluDecoder.decoderState, WuluReaderContext._balance,
+                            WuluReaderContext._file15, WuluReaderContext._file17,
+                            WuluReaderContext._file18, WuluReaderContext._file1A,
+                            WuluReaderContext._file1E,
+                            WuluReaderContext._localRecordFormat,
+                            WuluReaderContext._localRecords,
+                            WuluReaderContext._overdraft,
+                            WuluRecord._associatedSerialNumber, WuluRecord._data,
+                            WuluRecord._number, WuluRecord._sfi ]
+...

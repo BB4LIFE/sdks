@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftSoundAnalysis.dylib
+current-version:       97.3
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s13SoundAnalysis24SNTimeDurationConstraintO13durationRangeyACSo06CMTimeG0acACmFWC,
+                            _$s13SoundAnalysis24SNTimeDurationConstraintO19enumeratedDurationsyACSaySo6CMTimeaGcACmFWC,
+                            _$s13SoundAnalysis24SNTimeDurationConstraintOMa,
+                            _$s13SoundAnalysis24SNTimeDurationConstraintOMn,
+                            _$s13SoundAnalysis24SNTimeDurationConstraintON,
+                            _$sSo22SNClassifySoundRequestC0B8AnalysisE24windowDurationConstraintAC06SNTimefG0Ovg,
+                            _$sSo22SNClassifySoundRequestC0B8AnalysisE24windowDurationConstraintAC06SNTimefG0OvpMV,
+                            __swift_FORCE_LOAD_$_swiftSoundAnalysis ]
+...

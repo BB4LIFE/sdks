@@ -1,0 +1,60 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PreviewsOSSupport.framework/PreviewsOSSupport
+current-version:       19075
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PreviewsOSSupportVersionNumber,
+                            _PreviewsOSSupportVersionString,
+                            _UVAgentControlService,
+                            _UVAgentControlServiceInterface,
+                            _UVAgentPreviewService,
+                            _UVAgentPreviewServiceInterface,
+                            _UVBSPipeConnectionAgentInstance,
+                            _UVBSPipeConnectionHostInstance, _UVBSPipeService,
+                            _UVBSPipeServiceInterface,
+                            _UVCATransactionPostCommit,
+                            _UVCATransactionPostSynchronize, _UVDaemonService,
+                            _UVDaemonServiceInterface,
+                            _UVPreviewShellAgentPipeDomain,
+                            _UVPreviewShellAgentPipeMachName,
+                            _UVPreviewShellPreviewPipeDomain,
+                            _UVPreviewShellPreviewPipeMachName,
+                            _UVPreviewShellServicesDomain,
+                            _UVPreviewShellServicesMachName, _UVXcodeService,
+                            _UVXcodeServiceInterface, __initializePreviewAgent ]
+    objc-classes:         [ UVAgentControlServiceClientConnection,
+                            UVAgentControlServiceServerConnection,
+                            UVAgentPreviewServiceClientConnection,
+                            UVAgentPreviewServiceServerConnection,
+                            UVAgentSceneEntryPoint, UVAgentSceneSpecification,
+                            UVBSConnection, UVBSEndpoint,
+                            UVBSPipeServiceClientConnection,
+                            UVBSPipeServiceConnection,
+                            UVBSPipeServiceServerConnection,
+                            UVDaemonServiceClientConnection,
+                            UVDaemonServiceServerConnection, UVFauxPreviewAgent,
+                            UVServiceHubMessage, UVServiceHubServiceFactory,
+                            UVXcodeServiceClientConnection,
+                            UVXcodeServiceServerConnection,
+                            _TtC17PreviewsOSSupport20UVAgentSceneRegistry,
+                            _TtC17PreviewsOSSupport23PreviewDebugOverlayView,
+                            _TtC17PreviewsOSSupport23UVServiceHubPipeService,
+                            _TtC17PreviewsOSSupport26UVServiceHubPreviewService,
+                            _UVBSActionHandler ]
+    objc-ivars:           [ UVAgentPreviewServiceServerConnection._sceneIdentifier,
+                            UVAgentSceneEntryPoint._scene,
+                            UVBSConnection._activationEvent,
+                            UVBSConnection._clientPid,
+                            UVBSConnection._invalidationEvent,
+                            UVBSConnection._serviceConnection,
+                            UVBSEndpoint._underlying,
+                            UVServiceHubMessage._messageType,
+                            UVServiceHubMessage._payload,
+                            UVServiceHubMessage._replyHandler,
+                            _UVBSActionHandler._handler ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libMainThreadChecker.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ ___main_thread_add_check_for_selector,
+                            ___main_thread_checker_on_report,
+                            ___main_thread_checker_suppression_begin,
+                            ___main_thread_checker_suppression_end,
+                            ___main_thread_set_report_callback ]
+...

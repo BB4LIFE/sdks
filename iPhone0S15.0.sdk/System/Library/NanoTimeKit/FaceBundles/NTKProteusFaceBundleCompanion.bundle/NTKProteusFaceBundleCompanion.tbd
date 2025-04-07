@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/NanoTimeKit/FaceBundles/NTKProteusFaceBundleCompanion.bundle/NTKProteusFaceBundleCompanion
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NTKFaceBundleProteusBackgroundOff,
+                            _NTKFaceBundleProteusBackgroundOn ]
+    objc-classes:         [ NTKProteusBackgroundEditOption,
+                            NTKProteusContentView, NTKProteusFace,
+                            NTKProteusFaceBundle, NTKProteusFaceColorPalette,
+                            NTKProteusFaceView, NTKProteusFontLoader,
+                            NTKProteusStyleEditOption, NTKProteusWave ]
+...

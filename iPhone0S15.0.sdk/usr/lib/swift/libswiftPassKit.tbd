@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftPassKit.dylib
+current-version:       1504.1.48
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$sSo16PKPaymentRequestC7PassKitE29paymentCouponCodeExpiredError20localizedDescriptions0I0_pSSSg_tFZ,
+                            _$sSo16PKPaymentRequestC7PassKitE29paymentCouponCodeInvalidError20localizedDescriptions0I0_pSSSg_tFZ,
+                            _$sSo24PKStoredValuePassBalanceC0C3KitE2eeoiySbAB_ABtFZ,
+                            _$sSo24PKStoredValuePassBalanceC0C3KitE6amountSo9NSDecimalavg,
+                            _$sSo24PKStoredValuePassBalanceC0C3KitE6amountSo9NSDecimalavpMV,
+                            _$sSo27PKStoredValuePassPropertiesC0C3KitE9isBlockedSbvpMV,
+                            __swift_FORCE_LOAD_$_swiftPassKit ]
+...

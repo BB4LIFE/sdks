@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/NanoTimeKit/FaceBundles/NTKBigNumeralsDigitalFaceBundleCompanion.bundle/NTKBigNumeralsDigitalFaceBundleCompanion
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NTKFaceBundleBigNumeralsDigitalStyleFill,
+                            _NTKFaceBundleBigNumeralsDigitalStyleHalfFill,
+                            _NTKFaceBundleBigNumeralsDigitalStyleOutline,
+                            __BottomLabelAnalogStyleForStyle, __ScaleForEditMode,
+                            __TopLabelAnalogStyleForStyle ]
+    objc-classes:         [ NTKBigNumeralsDigitalColorPalette,
+                            NTKBigNumeralsDigitalFace,
+                            NTKBigNumeralsDigitalFaceBundle,
+                            NTKBigNumeralsDigitalFaceView,
+                            NTKBigNumeralsDigitalStyleEditOption,
+                            NTKBigNumeralsDigitalTimeView,
+                            NTKBigNumeralsDigitalTypefaceEditOption ]
+...

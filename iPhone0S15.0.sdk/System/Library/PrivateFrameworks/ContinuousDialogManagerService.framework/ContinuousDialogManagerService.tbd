@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/ContinuousDialogManagerService
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CDMXPCClientErrorCodeXPCError,
+                            _CDMXPCClientErrorDomain,
+                            _ContinuousDialogManagerServiceVersionNumber,
+                            _ContinuousDialogManagerServiceVersionString,
+                            _activeGraphNameKey, _availableServiceGraphsKey,
+                            _errorKey, _errorKeyCDMXPCSetGraphResponse,
+                            _localeIdentifierKey, _sandboxIdKey ]
+    objc-classes:         [ CDMXPCClient, CDMXPCListGraphsResponse,
+                            CDMXPCSetGraphResponse, CDMXPCSetupNLURequest ]
+    objc-ivars:           [ CDMXPCClient._connection, CDMXPCClient._delegate,
+                            CDMXPCListGraphsResponse._activeGraphName,
+                            CDMXPCListGraphsResponse._availableServiceGraphs,
+                            CDMXPCListGraphsResponse._error,
+                            CDMXPCSetGraphResponse._error,
+                            CDMXPCSetupNLURequest._localeIdentifier,
+                            CDMXPCSetupNLURequest._sandboxId ]
+...
